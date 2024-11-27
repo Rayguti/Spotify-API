@@ -1,0 +1,22 @@
+<div class="bg-dark p-3 m-3 rounded-3" style="width: 100%;">
+
+  <!-- <a [href]="item.external_urls.spotify" target="_blank" ><img [src]="item."  [alt]="'XD'" class="card-img-top"  > </a> -->
+
+  <div class="card-body">
+    <iframe style="border-radius:12px" [src]="this.getSafeUrl(this.track.id)"
+      width="100%" height="100%" frameBorder="0"
+      allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy">
+    </iframe>
+
+    @for (artist of track.artists; track $index) {
+      <a (click)="this.navigateToTopTrack(artist.id)" style="cursor: pointer;" >
+      
+    <span class="badge bg-success text-start mx-1 " style="max-width: 95%;overflow: hidden; display: inline-block;">
+      {{artist.name}} </span> </a>
+
+    }
+
+
+  </div>
+</div>

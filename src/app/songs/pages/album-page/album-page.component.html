@@ -1,0 +1,28 @@
+
+<div class="row mb-4"> <!-- Aumenta el espacio debajo de la navbar -->
+    <div class="col-12">
+        <shared-nav-bar></shared-nav-bar>
+        <!-- <shared-search-bar class="col-6" style="margin-left: 2%;"></shared-search-bar> -->
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="row">
+        <div class="col-12 m-auto" style="width: 90%;"> 
+            <app-artist-about 
+                [image]="this.artistImage" 
+                [name]="this.artistName" 
+                [url]="this.artistUrl">
+            </app-artist-about>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <shared-table 
+            [items]="this.items" 
+            class="mx-auto">
+        </shared-table>
+    </div>
+</div>
+

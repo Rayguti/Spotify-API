@@ -1,0 +1,11 @@
+<div class="row bg-dark " style="padding: 1%; border: solid black; border-radius: 100px; box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);">
+    <img  class="col-1 bg-dark "[src]="this.image" alt="" width="15%" style="border-radius: 100%;">
+    
+    <div class="col-2 bg-dark">
+        <h2 class="col-12" style="padding-top: 3%;">{{this.name}}</h2>
+        <p class="col-12" > <a [href]="this.url" target="_blank" >Ver página del artista </a></p>
+        <a  [routerLink]="this.getLastPage()" routerLinkActive="active" > <button class="btn btn-danger">  Regresar </button></a>
+    </div>
+    
+</div>
+

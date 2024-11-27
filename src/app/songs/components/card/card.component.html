@@ -1,0 +1,16 @@
+<div class="bg-dark p-3 m-3 rounded-3" style="width: 100%; box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);">
+
+  <a (click)="this.navigateToAlbumTracks(item.id)" style="cursor: pointer;"><img [src]="item.images[0].url" [alt]="'XD'"
+      class="card-img-top"> </a>
+  <div class="card-body">
+    <p class="card-text text-light text-center"> {{item.name}} </p>
+    @for (artist of item.artists; track $index) {
+    <a (click)="this.navigateToTopTrack(artist.id)" style="cursor: pointer;" >
+      <span class="badge bg-success text-start mx-1 " style="max-width: 95%;overflow: hidden; display: inline-block;">
+        {{artist.name}} </span>
+      </a>
+
+    }
+
+  </div>
+</div>

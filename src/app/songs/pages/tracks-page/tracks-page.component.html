@@ -1,0 +1,19 @@
+<div class="row">
+  <shared-nav-bar></shared-nav-bar>
+</div>
+
+  <div class="row" style="margin-right: 40%; margin-left: 10%;">
+    <shared-search-bar (dataEvent)="receiveData($event)"></shared-search-bar>
+  </div>
+  
+  <div class="row">
+    <div class="col-9">
+      <app-card-list-tracks [tracks]="this.items"></app-card-list-tracks>
+    </div>
+  
+    <div class="col-3">
+      <shared-history [history]="this.History" (dataEvent)="receiveData($event)"></shared-history>
+    </div>
+  </div>
+
+
