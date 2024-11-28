@@ -30,8 +30,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Set environment variables in environment.prod.ts
         run: |
-          sed -i "s|__SPOTIFY_CLIENT_ID__|${{ secrets.SPOTIFY_CLIENT_ID }}|g" main.e29c243d164ee870.js
-          sed -i "s|__SPOTIFY_CLIENT_SECRET__|${{ secrets.SPOTIFY_CLIENT_SECRET }}|g" main.e29c243d164ee870.js
+          sed -i "s|__SPOTIFY_CLIENT_ID__|${{ secrets.SPOTIFY_CLIENT_ID }}|g" main.a1c9dc879cd53c1f.js
+          sed -i "s|__SPOTIFY_CLIENT_SECRET__|${{ secrets.SPOTIFY_CLIENT_SECRET }}|g" main.a1c9dc879cd53c1f.js
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
