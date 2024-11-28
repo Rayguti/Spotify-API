@@ -2,7 +2,7 @@
   <shared-nav-bar></shared-nav-bar>
 </div>
 
-  <div class="row" style="margin-right: 40%; margin-left: 10%;">
+  <div class="row" style="margin-right: 40%; margin-left: 10%; margin-top: 1%;">
     <shared-search-bar (dataEvent)="receiveData($event)"></shared-search-bar>
   </div>
   
@@ -11,7 +11,7 @@
       <app-card-list-tracks [tracks]="this.items"></app-card-list-tracks>
     </div>
   
-    <div class="col-3">
+    <div class="col-3 pt-5">
       <shared-history [history]="this.History" (dataEvent)="receiveData($event)"></shared-history>
     </div>
   </div>

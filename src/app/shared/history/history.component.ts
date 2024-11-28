@@ -11,11 +11,9 @@ export class HistoryComponent {
   @Input()
   history!: string[];
 
-
   @Output() dataEvent: EventEmitter<string> = new EventEmitter<string>();
 
   sendData(search: string) {
-    // alert('hola');
     this.dataEvent.emit(search);
   }
 }

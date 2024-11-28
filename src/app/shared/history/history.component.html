@@ -1,11 +1,11 @@
-<div class="list-group bg-dark d-flex text-center" style="border-radius: 10px 10px 10px 10px;  border: solid 12px black;">
-    History
-    <!-- <p >History </p> -->
-    <!-- <div class=""> -->
-        @for (item of history; track $index) {
-            <a (click)="sendData(item)"  class="list-group-item list-group-item-action">{{item}}</a>
-        }
+<div class="list-group bg-dark d-flex text-center" style="border-radius: 10px 10px 10px 10px;  border: solid 4px black;">
+    
+    <div style="background-color: black;">
+        History
+    </div>
+
+    @for (item of history; track $index) {
+        <div  (click)="sendData(item)"  class=" bg-dark label " style="cursor: pointer; ">{{item}}</div>
+    }
 
 </div>
-
-
